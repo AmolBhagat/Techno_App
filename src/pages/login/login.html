@@ -1,0 +1,41 @@
+
+<ion-content padding>
+  <ion-avatar>
+      <img id = "logo" src="assets/imgs/logo/technogrowth-logo.png"style="margin: 30px auto">
+  </ion-avatar>
+  <div class="loginform">
+    <form>
+        <ion-list>
+            <ion-item class="ion-input"> 
+              <ion-icon item-start name="mail"></ion-icon>
+              <ion-input type="text" #username placeholder="Email"></ion-input>
+            </ion-item>
+      
+          </ion-list>
+          <ion-list>
+            <ion-item class="ion-input"> 
+              <ion-icon item-start name="lock"></ion-icon>
+              <ion-input type="password" #password placeholder="Password"></ion-input>
+            </ion-item>
+          </ion-list>
+          <div class="button-row">
+            <button id="btnSignIn" mat-raised-button color="primary" (click)="login()">SIGN IN</button>
+          </div>
+          <div style="margin:0px auto;text-align:center">
+            <p>Don't have an account? <a tappable color="primary" (tap)="signUp()">Sign Up</a> </p>
+          </div>
+          <div class="button-row">
+            <button id="divider" ion-button color="dark" outline></button>
+          </div>
+          <hr/>
+          <div class="button-row">
+            <button id="btnFacebook" mat-raised-button color="primary"> Facebook</button>
+          </div>
+          <div class="button-row">
+            <button id="btnGoolePlus" mat-raised-button color="warn">Google+</button>
+          </div>
+          
+    </form>
+  </div>
+
+</ion-content>

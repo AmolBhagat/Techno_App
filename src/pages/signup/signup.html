@@ -1,0 +1,45 @@
+<ion-content padding>
+<ion-avatar>
+  <img id = "logo" src="assets/imgs/logo/technogrowth-logo.png"style="margin: 30px auto">
+</ion-avatar>
+<div class="signupForm">
+  <form>
+    <ion-list>
+      <ion-item class="ion-input"> 
+        <ion-icon item-start name="person"></ion-icon>
+        <ion-input type="text" placeholder="Username"></ion-input>
+      </ion-item>
+
+    </ion-list>
+    <ion-list>
+      <ion-item class="ion-input"> 
+        <ion-icon item-start name="mail"></ion-icon>
+        <ion-input type="text" placeholder="Email"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item class="ion-input"> 
+        <ion-icon item-start name="lock"></ion-icon>
+        <ion-input type="password" placeholder="Password"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item class="ion-input"> 
+        <ion-icon item-start name="lock"></ion-icon>
+        <ion-input type="password" placeholder="Confirm password"></ion-input>
+      </ion-item>
+    </ion-list>
+    <div style="margin:0px auto;text-align:center">
+        <p><ion-checkbox style="height:24px;padding: 10px;"></ion-checkbox> I accept <a tappable color="primary">Terms & Conditions</a></p>
+    </div>
+
+    <div class="button-row">
+        <button id="btnSignUp" mat-raised-button color="primary">SIGN UP</button>
+    </div>
+
+    <div style="margin:0px auto;text-align:center">
+        <p>Click here? <a tappable color="primary" (tap)="signIn()">Sign In</a> </p>
+    </div>
+  </form>
+</div>
+</ion-content>
