@@ -1,0 +1,35 @@
+page-about-us {
+    // ion-content{
+    //     background: linear-gradient(to bottom, #ffffff 0%, #ccffff 100%);
+    // }
+    .toolbar-title-md {
+        padding: 10px 12px;
+        color:#f4f4f4;
+    }
+    .content{
+        //padding:16px;
+        padding-top: 0px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .content p{
+        text-align: justify;
+        font-size: 15px;
+    }
+    [col-11] {
+        padding: 15px;
+        margin-left: -5px;
+    }
+    #btn1{
+        padding: 15px;
+        margin-left: 0px;
+    }
+    [col-1] {
+        padding: 5px;
+        margin-left: -20px;
+    }
+    #arrowDropdown{
+        margin-left: 1px;
+    }
+ 
+}

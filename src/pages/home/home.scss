@@ -1,6 +1,28 @@
 page-home {
+    // ion-content{
+        
+    //    //background-image: url('../assets/imgs/back.JPG');
+    //    background: linear-gradient(to bottom, #ffffff 0%, #ccffff 100%);
+    //   }
+ 
     .toolbar-title-md {
         padding: 10px 12px;
+        color:#f4f4f4;
     }
-    
+    ion-card-content p{
+        text-align: justify;
+        font-size: 15px;
+    }
+    #toolbarlabel{
+        color:#f4f4f4;
+    }
+    .toolbar-md {
+        min-height: 20px;
+        height: 44px;
+    }
+    .Corporate-Contenet p{
+        text-align: justify;
+        font-size: 15px;
+    }
+   
 }

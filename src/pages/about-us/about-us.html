@@ -1,0 +1,75 @@
+<ion-header style="background-color:#000066">
+  <ion-row>
+    <ion-col col-2>
+      <button ion-button menuToggle clear>
+        <ion-icon name="menu" style="font-size:29px;color:#f4f4f4"></ion-icon>
+      </button>
+    </ion-col>
+    <ion-col col-10>
+      <ion-title style="margin:0px auto;">About Us</ion-title>
+    </ion-col>
+  </ion-row>
+
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-slides pager autoplay="5000" loop="true" speed="3000">
+      <ion-slide *ngFor = "let image of ImageArray">
+          <ion-avatar>
+              <img src="{{image.Image}}"style="margin: 0px auto">
+            </ion-avatar>
+      </ion-slide>
+    </ion-slides>
+  </div>
+ 
+  <div class="content">
+    <p>
+      " TechnoGrowth Software Solution Pvt.Ltd " is a leading Software Training and Development firm
+      dealing with Domestic and International Clients.We believe in providing high quality job oriented 
+      training specialized only in latest web application technologies.Here quality and Integrity comes 
+      first as being " The Best in what we do "Our trainer are certified experts and experienced professionals 
+      with the hands on real time projects and new methodologies.
+    </p>
+    <!-- <p>
+      It is an organization, founded to prepare the IT professionals, 
+      lacking perception or essential skills, vital to excel in the IT field.
+      The training program is designed to make them adept in facing challenges of the IT world.
+      It provides a favorable opportunity to fresh IT graduates to maximize their potential and 
+      also assists in launching their careers. The course schedule is designed to provide quality 
+      and dynamic IT training to young IT minds in an effort to guide them in their nascent careers.
+    </p> -->
+  </div>
+  <div class="content">
+    <button ion-button color="primary" (click)="showcontent()" clear>
+      <ion-row>
+        <ion-col col-1>
+            <ion-icon name="arrow-dropright" style="font-size:35px" *ngIf="!visible"></ion-icon>
+            <ion-icon id="arrowDropdown" name="arrow-dropdown" style="font-size:35px" *ngIf="visible"></ion-icon>
+        </ion-col>
+        <ion-col col-11 id="btn1">
+             Why TechnoGrowth?
+        </ion-col>
+      </ion-row>
+    </button>
+    <p *ngIf="buttonClicked">
+        It is an organization, founded to prepare the IT professionals, 
+        lacking perception or essential skills, vital to excel in the IT field.
+    </p>
+    <button ion-button color="primary" (click)="showcontent1()" clear>
+      <ion-row>
+        <ion-col col-1>
+            <ion-icon name="arrow-dropright" style="font-size:35px" *ngIf="!visible1"></ion-icon>
+            <ion-icon id="arrowDropdown" name="arrow-dropdown" style="font-size:35px" *ngIf="visible1"></ion-icon>
+        </ion-col>
+        <ion-col col-11>
+             About the Courses we offer.
+        </ion-col>
+      </ion-row>
+      </button>
+      <p *ngIf="button1Clicked">
+          It is an organization, founded to prepare the IT professionals, 
+          lacking perception or essential skills, vital to excel in the IT field.
+      </p>
+  </div>
+</ion-content>

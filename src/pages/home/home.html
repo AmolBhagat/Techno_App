@@ -1,8 +1,8 @@
-<ion-header>
+<ion-header style="background-color:#000066">
   <ion-row>
     <ion-col col-2>
-      <button ion-button menuToggle clear color="dark">
-        <ion-icon name="menu" style="font-size:29px"></ion-icon>
+      <button ion-button menuToggle clear>
+        <ion-icon name="menu" style="font-size:29px;color:#f4f4f4"></ion-icon>
       </button>
     </ion-col>
     <ion-col col-10>
@@ -12,6 +12,90 @@
 
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+  <div>
+    <ion-slides pager autoplay="5000" loop="true" speed="3000">
+      <ion-slide *ngFor = "let image of ImageArray">
+          <ion-avatar>
+              <img src="{{image.Image}}"style="margin: 0px auto">
+            </ion-avatar>
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <ion-card>
+    <ion-card-header style="background-color:#000066;padding: 8px;">
+      <h2 style="font-size:20px;color:#f4f4f4">Welcome</h2>
+    </ion-card-header>
+    <ion-card-content padding>
+      <p>
+        " TechnoGrowth Software Solution Pvt.Ltd " is a leading Software Training and Development firm
+        dealing with Domestic and International Clients.We believe in providing high quality job oriented 
+        training specialized only in latest web application technologies.Here quality and Integrity comes 
+        first as being " The Best in what we do "Our trainer are certified experts and experienced professionals 
+        with the hands on real time projects and new methodologies.
+      </p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-toolbar color="danger">
+      <ion-segment [(ngModel)]="sections.selectedSection">
+        <ion-segment-button value="{{sections.first}}" >
+            <label id="toolbarlabel">INDIVIDUAL</label>
+        </ion-segment-button>
+        <ion-segment-button value="{{sections.second}}" >
+          <label id="toolbarlabel">CORPORATE</label>
+        </ion-segment-button>
+        <ion-segment-button value="{{sections.third}}" >
+          <label id="toolbarlabel">COLLEGES</label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-toolbar> 
+    <ion-card-content>
+        <div [ngSwitch]="sections.selectedSection">
+          <ion-list *ngSwitchCase="'first'">
+            <ion-item>
+              <h2>Short term courses</h2>
+            </ion-item>
+            <ion-item>
+                <h2>Short term courses</h2>
+            </ion-item>
+            <ion-item>
+                  <h2>Short term courses</h2>
+            </ion-item>
+          </ion-list>
 
+          <div *ngSwitchCase="'second'" class="Corporate-Contenet">
+
+              <h2>Corporate Training Division</h2>
+              <p>
+                  "TechnoGrowth Software Solution Pvt.Ltd" Workshops Vertical is an 
+                  entity specifically created to cater to corporate houses - to make 
+                  the engagement more efficient, cost effective and take minimum amount of time.
+              </p>
+              <br/>
+              <p>
+                  We specialize in designing courses tailored to meet your specific needs,
+                   like Knowledge, Skills, Tools, Techniques designed to get results within 
+                   your specific time frame and budget. We assure you to seamlessly integrate
+                    these programs into your convenient schedule to quickly train the employees and 
+                    give them the competitive edge which is vital in today's day and age.
+              </p>
+ 
+            
+          </div>
+
+          <ion-list *ngSwitchCase="'third'">
+            <ion-item>
+              <h2>Short term courses</h2>
+            </ion-item>
+            <ion-item>
+                <h2>Short term courses</h2>
+            </ion-item>
+            <ion-item>
+                  <h2>Short term courses</h2>
+            </ion-item>
+          </ion-list>
+        </div>
+    </ion-card-content>
+  </ion-card> 
 </ion-content>
