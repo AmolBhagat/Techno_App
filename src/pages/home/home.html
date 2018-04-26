@@ -23,8 +23,8 @@
     </ion-slides>
   </div>
   <ion-card>
-    <ion-card-header style="background-color:#000066;padding: 8px;">
-      <h2 style="font-size:20px;color:#f4f4f4">Welcome</h2>
+    <ion-card-header style="background-color:#259ab5;padding: 8px;">
+      <h2 style="font-size:16px;color:#f4f4f4">Welcome</h2>
     </ion-card-header>
     <ion-card-content padding>
       <p>
@@ -37,16 +37,16 @@
     </ion-card-content>
   </ion-card>
   <ion-card>
-    <ion-toolbar color="danger">
+    <ion-toolbar color="custom">
       <ion-segment [(ngModel)]="sections.selectedSection">
         <ion-segment-button value="{{sections.first}}" >
-            <label id="toolbarlabel">INDIVIDUAL</label>
+            <label id="toolbarlabel">Individual</label>
         </ion-segment-button>
         <ion-segment-button value="{{sections.second}}" >
-          <label id="toolbarlabel">CORPORATE</label>
+          <label id="toolbarlabel">Corporate</label>
         </ion-segment-button>
         <ion-segment-button value="{{sections.third}}" >
-          <label id="toolbarlabel">COLLEGES</label>
+          <label id="toolbarlabel">Colleges</label>
         </ion-segment-button>
       </ion-segment>
     </ion-toolbar> 

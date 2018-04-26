@@ -38,7 +38,8 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  custom:     #259ab5
 );
 
 
@@ -87,4 +88,8 @@ $colors: (
 @import "roboto";
 @import "noto-sans";
 
+$button-md-text-transform: none;
 //$card-md-background-color:transparent;
+$toolbar-background: transparent;
+
+$segment-button-md-text-color-activate: #f4f4f4;

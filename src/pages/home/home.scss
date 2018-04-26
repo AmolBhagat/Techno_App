@@ -13,12 +13,21 @@ page-home {
         text-align: justify;
         font-size: 15px;
     }
+    .card-md h2 {
+        margin: 2px 4px;
+    }
+    .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated {
+        border-color: white;
+    }
     #toolbarlabel{
-        color:#f4f4f4;
+        //color: white;
+        font-size: 16px;
+        text-transform: none;
     }
     .toolbar-md {
         min-height: 20px;
         height: 44px;
+        padding: 0px;
     }
     .Corporate-Contenet p{
         text-align: justify;
